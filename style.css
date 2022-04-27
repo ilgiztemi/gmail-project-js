@@ -1,271 +1,506 @@
 * {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: rgb(50, 105, 123);
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(50, 105, 123);
 }
+
 body {
-    background-color: aliceblue;
+  background-color: aliceblue;
 }
+
+/* icons hover */
+.fa-sliders,
+.fa-circle-question,
+.fa-gear,
+.fa-buromobelexperte,
+.account-icon,
+.fa-calendar,
+.fa-lightbulb,
+.fa-file-pen,
+.fa-circle-user,
+.fa-plus,
+.fa-angle-right,
+.fa-square,
+.fa-chevron-down,
+.fa-arrow-rotate-right,
+.fa-ellipsis-vertical,
+.fa-chevron-left,
+.fa-chevron-right {
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.fa-sliders:hover,
+.fa-circle-question:hover,
+.fa-gear:hover,
+.fa-buromobelexperte:hover,
+.account-icon:hover,
+.fa-calendar:hover,
+.fa-lightbulb:hover,
+.fa-file-pen:hover,
+.fa-circle-user:hover,
+.fa-plus:hover,
+.fa-angle-right:hover,
+.fa-angle-right:hover,
+.fa-square:hover,
+.fa-chevron-down:hover,
+.fa-arrow-rotate-right:hover,
+.fa-ellipsis-vertical:hover,
+.fa-chevron-left:hover,
+.fa-chevron-right:hover {
+  background-color: skyblue;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+i {
+  cursor: pointer;
+}
+
 .container .top-navbar {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightblue;
-    padding-bottom: 5px;
-    padding-top: 5px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightblue;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
+
 .top-navbar .top-navbar-left {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
 }
+
 #left-menu-btn:hover {
-    color: skyblue;
+  color: skyblue;
 }
+
 #left-menu-btn {
-    cursor: pointer;
+  cursor: pointer;
 }
-.top-navbar .top-navbar-left img, p {
-    margin-left: 25px;
+
+.top-navbar .top-navbar-left img,
+p {
+  margin-left: 25px;
 }
+
 .top-navbar .top-navbar-left p {
-    font-size: 20px;
-    font-weight: bolder;
+  font-size: 20px;
+  font-weight: bolder;
 }
+
 .top-navbar .top-navbar-center {
-    border: 1px solid lightblue;
-    border-radius: 7px;
-    padding: 10px 18px;
-    margin-left: 60px;
-    margin-right: auto;
+  border: 1px solid lightblue;
+  border-radius: 9px;
+  padding: 8px 15px;
+  margin-left: 60px;
+  margin-right: auto;
 }
+
+.top-navbar-center:hover {
+  box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.35);
+}
+
 .top-navbar .top-navbar-center #search-input {
-    border: none;
-    width: 430px;
-    padding: 5px 0;
-    border-style: none;
-    padding-left: 5px;
-    background-color: inherit;
+  font-size: 16px;
+  font-weight: 900;
+  border: none;
+  width: 430px;
+  border-style: none;
+  background-color: inherit;
 }
+
 .top-navbar .top-navbar-center #search-input:focus {
-    outline: none;
+  outline: none;
 }
+
 .top-navbar .top-navbar-right {
-    display: flex;
-    flex-flow: row wrap;
-    font-size: 22px;
-    justify-content: space-evenly;
-    width: 200px;
-    margin-left: 0;
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 22px;
+  justify-content: space-evenly;
+  width: 200px;
+  margin-left: 0;
 }
+
 .container .main .left-bar {
-    display: block;
-    border: 1px solid lightblue;
-    height: 93vh;
-    flex-basis: 37%;
-    max-width: 300px;
+  display: block;
+  border: 1px solid lightblue;
+  height: 93vh;
+  flex-basis: 37%;
+  max-width: 300px;
 }
+
 .container .main .left-bar .compose:hover {
-    background-color: lightblue;
+  background-color: lightblue;
 }
+
 .container .main .left-bar .compose {
-    cursor: pointer;
-    border: 1px solid lightblue;
-    width: 140px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 13px;
-    border-radius: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+  cursor: pointer;
+  border: 1px solid lightblue;
+  width: 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 7px;
+  border-radius: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.25);
 }
+
 .container .main .left-bar-menu {
-    overflow-y: scroll;
-    display: block;
-    height: 350px;
-    width: 100%;
-    border-top: 1px solid lightblue;
-    border-bottom: 1px solid lightblue;
+  overflow-y: scroll;
+  display: block;
+  height: 350px;
+  width: 100%;
+  border-top: 1px solid lightblue;
+  border-bottom: 1px solid lightblue;
 }
+
 .container .main .left-bar-menu i {
-    cursor: pointer;
-    display: block;
-    padding: 10px;
-    padding-left: 15px;
-    width: 95%;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  padding-left: 15px;
+  width: 95%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
+
 .container .main .left-bar-menu i:hover {
-    background-color: lightblue;
+  background-color: lightblue;
 }
+
 .container .main .left-bar-menu #inbox:hover {
-    background-color: lightblue;
-    color: rgb(50, 105, 123);
+  background-color: lightblue;
+  color: rgb(50, 105, 123);
 }
+
 .container .main .left-bar-menu #inbox {
-    color: red;
-    background-color: rgb(228, 176, 176);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+  color: red;
+  background-color: rgb(228, 176, 176);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
+
 .container .main .left-bar-menu span {
-    padding-left: 15px;
+  padding-left: 15px;
 }
+
 .container .main {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
+
 .main .main-bar {
-    border: 1px solid lightblue;
-    flex-basis: 100%;
-    height: 93vh;
+  border: 1px solid lightblue;
+  flex-basis: 100%;
+  height: 93vh;
 }
-.main .right-bar {
-    border: 1px solid lightblue;
-    flex-basis: 8%;
-}
+
 .main .left-bar-menu-bottom .meet p {
-    padding-top: 15px;
-    padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
+
 .main .left-bar-menu-bottom .meet i {
-    cursor: pointer;
-    display: block;
-    padding: 10px;
-    padding-left: 15px;
-    width: 95%;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  padding-left: 15px;
+  width: 95%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
+
 .main .left-bar-menu-bottom .meet i:hover {
-    background-color: lightblue;
+  background-color: lightblue;
 }
+
 .main .left-bar-menu-bottom .hangouts i {
-    display: inline-block;
-    padding: 10px;
-    padding-left: 15px;
-    cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  padding-left: 15px;
+  cursor: pointer;
 }
-.main .left-bar-menu-bottom  p {
-    padding-bottom: 10px;
-    padding-top: 10px;
+
+.main .left-bar-menu-bottom p {
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
-.main .left-bar-menu-bottom .hangouts i span {
-    padding-left: 14px;
-}
+
+.main .left-bar-menu-bottom .hangouts i span,
 .main .left-bar-menu-bottom .meet i span {
-    padding-left: 14px;
+  padding-left: 14px;
 }
+
 .main .left-bar-menu-bottom .hangouts #plus-icon {
-    padding-left: 10%;
+  padding-left: 10%;
 }
+
 .main .left-bar-menu-bottom .hangouts {
-    padding-bottom: 220px;
+  padding-bottom: 220px;
 }
+
 .main .left-bar-menu-bottom .left-footer {
-    border-top: 1px solid lightblue;
-    padding: 5px;
-    text-align: center;
+  border-top: 1px solid lightblue;
+  padding: 5px;
+  text-align: center;
 }
+
 .top-icons {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightblue;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightblue;
 }
+
 .top-icons i {
-    padding: 10px;
+  padding: 10px;
 }
+
 .mails {
-    overflow-y: scroll;
-    height: 100%;
+  overflow-y: scroll;
+  height: 100%;
 }
+
 .mails .mails-top {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
 }
+
 .mails .mails-top i:hover {
-    background-color: aliceblue;
+  background-color: aliceblue;
 }
+
 .mails .mails-top i {
-    padding: 18px;
-    border: 1px solid lightblue;
-    width: 100%;
-    background-color: rgb(228, 176, 176);
-    cursor: pointer;
+  padding: 18px;
+  border: 1px solid lightblue;
+  width: 100%;
+  background-color: rgb(228, 176, 176);
+  cursor: pointer;
 }
+
 .mails .mails-top i span {
-    margin-left: 15px;
+  margin-left: 15px;
 }
-.mails-list {
-    width: 100%;
-}
+
+.mails-list,
 .mails-inbox {
-    width: 100%;
+  width: 100%;
 }
+
 .mails-inbox .sender {
-    flex-basis: 10%;
+  flex-basis: 10%;
 }
+
 .mails-inbox .message {
-    clear: both;
-    overflow: hidden;
-    white-space: wrap;
+  clear: both;
+  overflow: hidden;
+  white-space: wrap;
 }
-.mails-inbox li{
-    width: 100%;
-    border: 1px solid lightblue;
-    font-size: 15px;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    padding: 5px;
-    text-overflow: ellipsis;
-    overflow-x: hidden;
-    justify-content: space-around;
-    line-height: 14px;
+
+.mails-inbox li {
+  width: 100%;
+  border: 1px solid lightblue;
+  font-size: 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 5px;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  justify-content: space-around;
+  line-height: 14px;
 }
-.mails-inbox li .sender{
-    padding-left: 10px;
+
+.mails-inbox li .sender {
+  padding-left: 10px;
 }
+
 .mails-inbox #time-date {
-    text-align: end;
-    flex: 15%;
-    margin-right: 1%;
+  text-align: end;
+  flex: 15%;
+  margin-right: 1%;
 }
+
 .mails-inbox-icons i {
-    padding-left: 5px;
+  padding-left: 5px;
 }
+
+/* right bar */
 .right-bar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    max-width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 50px;
+  border: 1px solid lightblue;
+  flex-basis: 8%;
 }
+
 .right-bar-top {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
+
 .right-bar-bottom {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 20px;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
+/* support button */
+#support,
+#extensions,
+#account {
+  background-color: white;
+  position: absolute;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.35);
+  display: none;
+}
 
+#support p:hover,
+#extensions span:hover,
+#account h4:hover,
+button:hover {
+  background-color: rgb(240, 240, 240);
+  cursor: pointer;
+}
 
+#support {
+  padding: 10px;
+  font-size: 0.9rem;
+  top: 50px;
+  right: 150px;
+  width: 210px;
+  height: 160px;
+}
+
+#support p {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.feedback {
+  border-top: 1px solid rgb(195, 195, 195);
+}
+
+/* extension button */
+#extensions {
+  top: 6.5%;
+  right: 1%;
+  height: 435px;
+  width: 300px;
+  overflow-y: scroll;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(11, 1fr);
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+#extensions span {
+  border-radius: 7px;
+  padding: 14px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+#extensions i {
+  font-size: 35px;
+}
+
+#extensions p,
+#account p {
+  font-size: 13px;
+  margin: 0;
+  padding-top: 8px;
+}
+
+/* account button */
+#account {
+  padding-top: 15px;
+  text-align: center;
+  top: 50px;
+  right: 30px;
+  height: 370px;
+  width: 320px;
+}
+
+.add-account {
+  border-top: 1px solid rgb(195, 195, 195);
+  border-bottom: 1px solid rgb(195, 195, 195);
+}
+
+#account h4 {
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#account h4:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.manage {
+  border: 1px solid rgb(195, 195, 195);
+  border-radius: 50px;
+}
+
+.add-account h4 {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: white;
+  border: 1px solid rgb(195, 195, 195);
+  border-radius: 3px;
+  padding: 7px 18px;
+  margin: 13px;
+  font-weight: bold;
+}
+
+.avatar {
+  font-size: 70px;
+  padding: 15px 0;
+}
+
+.fa-user {
+  font-size: 13px;
+  margin-right: 20px;
+}
+
+#account h3 {
+  font-size: 19px;
+}
+
+.privacy {
+  border-top: 1px solid rgb(195, 195, 195);
+}

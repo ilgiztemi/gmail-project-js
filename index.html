@@ -1,137 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>gmail-clone</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="top-navbar">
-            <div class="top-navbar-left">
-                <i class="fa-solid fa-bars" id="left-menu-btn"></i>
-                <img src="https://pnggrid.com/wp-content/uploads/2021/04/Gmail-Transparent-Logo-1024x768.png" alt="gmail-logo" style="width: 35px;">
-                <p>Gmail</p>
-            </div>
-            <div class="top-navbar-center">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" id="search-input" placeholder="Search mail">
-                <i class="fa-solid fa-sliders"></i>
-            </div>
-            <div class="top-navbar-right">
-                <i class="fa-solid fa-circle-question"></i>
-                <i class="fa-solid fa-gear"></i>
-                <i class="fa-brands fa-buromobelexperte"></i>
-                <i class="fa-solid fa-face-smile"></i>
-            </div>
+      <div class="top-navbar">
+        <div class="top-navbar-left">
+          <i class="fa-solid fa-bars" id="left-menu-btn"></i>
+          <img
+            src="https://pnggrid.com/wp-content/uploads/2021/04/Gmail-Transparent-Logo-1024x768.png"
+            alt="gmail-logo"
+            style="width: 35px"
+          />
+          <a href="http://127.0.0.1:5501/index.html"><p>Gmail</p></a>
         </div>
-        <div class="main">
-            <div class="left-bar">
-                <div class="compose">
-                    <i class="fa-solid fa-plus"></i><span>Compose</span>
-                </div>
-                <div class="left-bar-menu">
-                    <i class="fa-solid fa-inbox" id="inbox"><span id="left-menu">inbox</span></i>
-                    <i class="fa-solid fa-star"><span id="left-menu">starred</span></i>
-                    <i class="fa-solid fa-clock"><span id="left-menu">snoozed</span></i>
-                    <i class="fa-solid fa-square-caret-right"><span id="left-menu">important</span></i>
-                    <i class="fa-solid fa-jet-fighter"><span id="left-menu">sent</span></i>
-                    <i class="fa-brands fa-firstdraft"><span id="left-menu">drafts</span></i>
-                    <i class="fa-brands fa-blogger-b"><span id="left-menu">categories</span></i>
-                    <i class="fa-brands fa-blogger-b"><span id="left-menu">[Gmail]/DOCUMENTS</span></i>
-                    <i class="fa-brands fa-blogger-b"><span id="left-menu">[Gmail]/All Mail</span></i>
-                    <i class="fa-brands fa-blogger-b"><span id="left-menu">[lmap]/Drafts</span></i>
-                    <i class="fa-brands fa-blogger-b"><span id="left-menu">[lmap]/Outbox</span></i>
-                    <i class="fa-brands fa-blogger-b"><span id="left-menu">[lmap]/Sent</span></i>
-                    <i class="fa-brands fa-blogger-b"><span id="left-menu">[lmap]/Trash</span></i>
-                    <i class="fa-brands fa-blogger-b"><span id="left-menu">Deleted Items</span></i>
-                    <i class="fa-brands fa-blogger-b"><span id="left-menu">Deleted Messages</span></i>
-                    <i class="fa-brands fa-blogger-b"><span id="left-menu">Documents</span></i>
-                    <i class="fa-brands fa-blogger-b"><span id="left-menu">Notes</span></i>
-                    <i class="fa-brands fa-blogger-b"><span id="left-menu">Sent Items</span></i>
-                </div>
-                <div class="left-bar-menu-bottom">
-                    <div class="meet">
-                        <p>Meet</p>
-                        <i class="fa-solid fa-video"><span>New meeting</span></i>
-                        <i class="fa-solid fa-keyboard"><span>Join a meeting</span></i>
-                    </div>
-                    <div>
-                        <p>Hangouts</p>
-                        <div class="hangouts">
-                            <i class="fa-solid fa-face-smile"><span>team-1</span></i>
-                            <i class="fa-solid fa-angle-down"></i>
-                            <i class="fa-solid fa-plus" id="plus-icon"></i>
-                        </div>
-                        
-                    </div>
-                    <div class="left-footer">
-                        <i class="fa-solid fa-user"></i>
-                        <i class="fa-brands fa-rocketchat"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="main-bar">
-                <div class="top-icons">
-                    <div>
-                        <i class="fa-regular fa-square"></i>
-                        <i class="fa-solid fa-chevron-down"></i>
-                        <i class="fa-solid fa-arrow-rotate-right"></i>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </div>
-                    <div>
-                        <span>1-50 of </span><span>1500</span>
-                        <i class="fa-solid fa-chevron-left"></i>
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div>
-                </div>
-                <div class="mails">
-                    <div class="mails-top">
-                        <i class="fa-solid fa-box primaryBtn"><span>Primary</span></i>
-                        <i class="fa-solid fa-user-group"><span class="socialBtn">Social</span></i>
-                        <i class="fa-solid fa-eraser promoBtn"><span>Promotions</span></i>
-                    </div>
-                    <div class="mails-list">
-                        <ul class="mails-inbox">
-                            <!-- <li>
-                                <div class="mails-inbox-icons">
-                                    <i class="fa-regular fa-square-full"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-head-side-mask"></i>
-                                </div>
-                                <p>Toronto, NIV</p>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ab repellendus nemo officia. Adipisci, esse.</p>
-                                <p id='date-time'></p>
-                            </li> -->
-                        </ul>
-                    </div>
-                </div>
-                <footer id="main-footer">
-                    
-                </footer>
-            </div>
-            <div class="right-bar">
-                <div class="right-bar-top">
-                    <i class="fa-solid fa-calendar"></i>
-                    <i class="fa-solid fa-lightbulb"></i>
-                    <i class="fa-solid fa-file-pen"></i>
-                    <i class="fa-solid fa-circle-user"></i>
-                </div>
-                <div class="right-bar-bottom">
-                    <i class="fa-solid fa-plus"></i>
-                    <i class="fa-solid fa-angle-right"></i>
-                </div>
-            </div>
+        <div class="top-navbar-center">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="search-input" placeholder="Search mail" />
+          <i class="fa-solid fa-sliders"></i>
         </div>
+        <div class="top-navbar-right">
+          <i class="fa-solid fa-circle-question">
+            <div id="support">
+              <p>Help</p>
+              <p>Training</p>
+              <p>Updates</p>
+              <div><p class="feedback">Send feedback to Google</p></div>
+            </div>
+          </i>
+          <i class="fa-solid fa-gear"></i>
+          <i class="fa-brands fa-buromobelexperte">
+            <div id="extensions">
+              <div class="grid">
+                <span
+                  ><i class="fa-solid fa-face-smile"></i>
+                  <p>Account</p></span
+                >
+                <a target="_blank" href="https://www.google.com/webhp?tab=mw">
+                  <span
+                    ><i class="fa-brands fa-google"></i>
+                    <p>Search</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.google.com/maps/@34.920746,-80.7990178,15z?hl=en"
+                >
+                  <span
+                    ><i class="fa-solid fa-location-dot"></i>
+                    <p>Maps</p></span
+                  >
+                </a>
+                <a target="_blank" href="https://www.youtube.com/">
+                  <span
+                    ><i class="fa-brands fa-youtube"></i>
+                    <p>YouTube</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://play.google.com/store?hl=en&tab=m8"
+                >
+                  <span
+                    ><i class="fa-brands fa-google-play"></i>
+                    <p>Play</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://mail.google.com/mail/u/0/#inbox"
+                >
+                  <span
+                    ><i class="fa-solid fa-envelope"></i>
+                    <p>Gmail</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://drive.google.com/drive/my-drive"
+                >
+                  <span
+                    ><i class="fa-brands fa-google-drive"></i>
+                    <p>Drive</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://calendar.google.com/calendar/u/0/r?tab=mc"
+                >
+                  <span
+                    ><i class="fa-solid fa-calendar-check"></i>
+                    <p>Calendar</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://translate.google.com/?hl=en&tab=mT"
+                >
+                  <span
+                    ><i class="fa-solid fa-language"></i>
+                    <p>Translate</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://photos.google.com/?tab=mq&pageId=none&pli=1"
+                >
+                  <span
+                    ><i class="fa-solid fa-images"></i>
+                    <p>Photos</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://news.google.com/topstories?tab=mn&hl=en-US&gl=US&ceid=US:en"
+                >
+                  <span
+                    ><i class="fa-solid fa-newspaper"></i>
+                    <p>News</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://meet.google.com/?hs=197&pli=1&authuser=0"
+                >
+                  <span
+                    ><i class="fa-solid fa-handshake"></i>
+                    <p>Meet</p></span
+                  >
+                </a>
+                <span
+                  ><i class="fa-solid fa-face-smile"></i>
+                  <p>Account</p></span
+                >
+                <a target="_blank" href="https://www.google.com/webhp?tab=mw">
+                  <span
+                    ><i class="fa-brands fa-google"></i>
+                    <p>Search</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.google.com/maps/@34.920746,-80.7990178,15z?hl=en"
+                >
+                  <span
+                    ><i class="fa-solid fa-location-dot"></i>
+                    <p>Maps</p></span
+                  >
+                </a>
+                <a target="_blank" href="https://www.youtube.com/">
+                  <span
+                    ><i class="fa-brands fa-youtube"></i>
+                    <p>YouTube</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://play.google.com/store?hl=en&tab=m8"
+                >
+                  <span
+                    ><i class="fa-brands fa-google-play"></i>
+                    <p>Play</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://mail.google.com/mail/u/0/#inbox"
+                >
+                  <span
+                    ><i class="fa-solid fa-envelope"></i>
+                    <p>Gmail</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://drive.google.com/drive/my-drive"
+                >
+                  <span
+                    ><i class="fa-brands fa-google-drive"></i>
+                    <p>Drive</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://calendar.google.com/calendar/u/0/r?tab=mc"
+                >
+                  <span
+                    ><i class="fa-solid fa-calendar-check"></i>
+                    <p>Calendar</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://translate.google.com/?hl=en&tab=mT"
+                >
+                  <span
+                    ><i class="fa-solid fa-language"></i>
+                    <p>Translate</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://photos.google.com/?tab=mq&pageId=none&pli=1"
+                >
+                  <span
+                    ><i class="fa-solid fa-images"></i>
+                    <p>Photos</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://news.google.com/topstories?tab=mn&hl=en-US&gl=US&ceid=US:en"
+                >
+                  <span
+                    ><i class="fa-solid fa-newspaper"></i>
+                    <p>News</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://meet.google.com/?hs=197&pli=1&authuser=0"
+                >
+                  <span
+                    ><i class="fa-solid fa-handshake"></i>
+                    <p>Meet</p></span
+                  >
+                </a>
+                <span
+                  ><i class="fa-solid fa-face-smile"></i>
+                  <p>Account</p></span
+                >
+                <a target="_blank" href="https://www.google.com/webhp?tab=mw">
+                  <span
+                    ><i class="fa-brands fa-google"></i>
+                    <p>Search</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.google.com/maps/@34.920746,-80.7990178,15z?hl=en"
+                >
+                  <span
+                    ><i class="fa-solid fa-location-dot"></i>
+                    <p>Maps</p></span
+                  >
+                </a>
+                <a target="_blank" href="https://www.youtube.com/">
+                  <span
+                    ><i class="fa-brands fa-youtube"></i>
+                    <p>YouTube</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://play.google.com/store?hl=en&tab=m8"
+                >
+                  <span
+                    ><i class="fa-brands fa-google-play"></i>
+                    <p>Play</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://mail.google.com/mail/u/0/#inbox"
+                >
+                  <span
+                    ><i class="fa-solid fa-envelope"></i>
+                    <p>Gmail</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://drive.google.com/drive/my-drive"
+                >
+                  <span
+                    ><i class="fa-brands fa-google-drive"></i>
+                    <p>Drive</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://calendar.google.com/calendar/u/0/r?tab=mc"
+                >
+                  <span
+                    ><i class="fa-solid fa-calendar-check"></i>
+                    <p>Calendar</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://translate.google.com/?hl=en&tab=mT"
+                >
+                  <span
+                    ><i class="fa-solid fa-language"></i>
+                    <p>Translate</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://photos.google.com/?tab=mq&pageId=none&pli=1"
+                >
+                  <span
+                    ><i class="fa-solid fa-images"></i>
+                    <p>Photos</p></span
+                  >
+                </a>
+                <a
+                  target="_blank"
+                  href="https://news.google.com/topstories?tab=mn&hl=en-US&gl=US&ceid=US:en"
+                >
+                  <span
+                    ><i class="fa-solid fa-newspaper"></i>
+                    <p>News</p></span
+                  >
+                </a>
+              </div>
+            </div>
+          </i>
+          <i class="fa-solid fa-face-smile account-icon">
+            <div id="account">
+              <i class="fa-solid fa-face-smile avatar"></i>
+              <h3>Team-1</h3>
+              <p>team1@gmail.com</p>
+              <a
+                target="_blank"
+                href="https://myaccount.google.com/?hl=en&utm_source=OGB&utm_medium=act"
+                ><h4 class="manage">Manage your Google Account</h4></a
+              >
+              <div class="add-account">
+                <a
+                  target="_blank"
+                  href="https://accounts.google.com/signin/v2/identifier?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Fhl%3Den%26utm_source%3DOGB%26utm_medium%3Dact&hl=en&ec=GAlAwAE&flowName=GlifWebSignIn&flowEntry=AddSession"
+                  ><h4>
+                    <i class="fa-solid fa-user"></i>Add another account
+                  </h4></a
+                >
+              </div>
+              <button>Sign out</button>
+              <p class="privacy">Privacy Policy | Terms of Service</p>
+            </div>
+          </i>
+        </div>
+      </div>
+      <div class="main">
+        <div class="left-bar">
+          <div class="compose">
+            <i class="fa-solid fa-plus"></i><span>Compose</span>
+          </div>
+          <div class="left-bar-menu">
+            <i class="fa-solid fa-inbox" id="inbox"
+              ><span id="left-menu">inbox</span></i
+            >
+            <i class="fa-solid fa-star"><span id="left-menu">starred</span></i>
+            <i class="fa-solid fa-clock"><span id="left-menu">snoozed</span></i>
+            <i class="fa-solid fa-square-caret-right"
+              ><span id="left-menu">important</span></i
+            >
+            <i class="fa-solid fa-jet-fighter"
+              ><span id="left-menu">sent</span></i
+            >
+            <i class="fa-brands fa-firstdraft"
+              ><span id="left-menu">drafts</span></i
+            >
+            <i class="fa-brands fa-blogger-b"
+              ><span id="left-menu">categories</span></i
+            >
+            <i class="fa-brands fa-blogger-b"
+              ><span id="left-menu">[Gmail]/DOCUMENTS</span></i
+            >
+            <i class="fa-brands fa-blogger-b"
+              ><span id="left-menu">[Gmail]/All Mail</span></i
+            >
+            <i class="fa-brands fa-blogger-b"
+              ><span id="left-menu">[lmap]/Drafts</span></i
+            >
+            <i class="fa-brands fa-blogger-b"
+              ><span id="left-menu">[lmap]/Outbox</span></i
+            >
+            <i class="fa-brands fa-blogger-b"
+              ><span id="left-menu">[lmap]/Sent</span></i
+            >
+            <i class="fa-brands fa-blogger-b"
+              ><span id="left-menu">[lmap]/Trash</span></i
+            >
+            <i class="fa-brands fa-blogger-b"
+              ><span id="left-menu">Deleted Items</span></i
+            >
+            <i class="fa-brands fa-blogger-b"
+              ><span id="left-menu">Deleted Messages</span></i
+            >
+            <i class="fa-brands fa-blogger-b"
+              ><span id="left-menu">Documents</span></i
+            >
+            <i class="fa-brands fa-blogger-b"
+              ><span id="left-menu">Notes</span></i
+            >
+            <i class="fa-brands fa-blogger-b"
+              ><span id="left-menu">Sent Items</span></i
+            >
+          </div>
+          <div class="left-bar-menu-bottom">
+            <div class="meet">
+              <p>Meet</p>
+              <i class="fa-solid fa-video"><span>New meeting</span></i>
+              <i class="fa-solid fa-keyboard"><span>Join a meeting</span></i>
+            </div>
+            <div>
+              <p>Hangouts</p>
+              <div class="hangouts">
+                <i class="fa-solid fa-face-smile"><span>team-1</span></i>
+                <i class="fa-solid fa-angle-down"></i>
+                <i class="fa-solid fa-plus" id="plus-icon"></i>
+              </div>
+            </div>
+            <div class="left-footer">
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-brands fa-rocketchat"></i>
+            </div>
+          </div>
+        </div>
+        <div class="main-bar">
+          <div class="top-icons">
+            <div>
+              <i class="fa-regular fa-square"></i>
+              <i class="fa-solid fa-chevron-down"></i>
+              <i class="fa-solid fa-arrow-rotate-right"></i>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div>
+              <span>1-50 of </span><span>1,500</span>
+              <i class="fa-solid fa-chevron-left"></i>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="mails">
+            <div class="mails-top">
+              <i class="fa-solid fa-box primaryBtn"><span>Primary</span></i>
+              <i class="fa-solid fa-eraser promoBtn"><span>Promotions</span></i>
+              <i class="fa-solid fa-user-group"
+                ><span class="socialBtn">Social</span></i
+              >
+            </div>
+            <div class="mails-list">
+              <ul class="mails-inbox"></ul>
+            </div>
+          </div>
+          <footer id="main-footer"></footer>
+        </div>     
+          <div class="right-bar">
+            <div class="right-bar-top">
+              <i class="fa-solid fa-calendar"></i>
+              <i class="fa-solid fa-lightbulb"></i>
+              <i class="fa-solid fa-file-pen"></i>
+              <i class="fa-solid fa-circle-user"></i>
+            </div>
+            <div class="right-bar-bottom">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+      </div>
     </div>
 
-
     <script type="module" src="main.js"></script>
-</body>
+  </body>
 </html>
